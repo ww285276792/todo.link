@@ -1,0 +1,16 @@
+{
+    "name": "Web",
+    "alias": "web",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Web\\Providers\\WebServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

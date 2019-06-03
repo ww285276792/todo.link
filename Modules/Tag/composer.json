@@ -1,0 +1,25 @@
+{
+    "name": "wangwei/tag",
+    "description": "",
+    "authors": [
+        {
+            "name": "wangwei",
+            "email": "285276792@qq.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Tag\\Providers\\TagServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Tag\\": ""
+        }
+    }
+}

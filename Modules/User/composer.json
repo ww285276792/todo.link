@@ -1,0 +1,25 @@
+{
+    "name": "wangwei/user",
+    "description": "",
+    "authors": [
+        {
+            "name": "wangwei",
+            "email": "285276792@qq.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\User\\Providers\\UserServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\User\\": ""
+        }
+    }
+}

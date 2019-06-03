@@ -1,0 +1,16 @@
+#wrapper {
+    padding: 54px 0 0 0;
+}
+
+#content {
+    padding: 1em;
+}
+
+#sidebar {
+    font-size: 1em;
+    padding-bottom: 30px;
+}
+
+.ui.visible.left.sidebar ~ .fixed.menu, .ui.visible.left.sidebar ~ .pusher {
+    padding-right: 260px;
+}

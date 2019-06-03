@@ -1,0 +1,25 @@
+{
+    "name": "wangwei/task",
+    "description": "",
+    "authors": [
+        {
+            "name": "wangwei",
+            "email": "285276792@qq.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Task\\Providers\\TaskServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Task\\": ""
+        }
+    }
+}

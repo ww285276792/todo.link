@@ -1,0 +1,125 @@
+body {
+    background: #f0f2f5;
+}
+
+a {
+    cursor: pointer !important;
+}
+
+a {
+    color: rgba(0, 0, 0, .87);
+}
+
+a:hover {
+    color: #4183c4;
+}
+
+.nav {
+    height: 3.5em;
+    border-radius: 0 !important;
+}
+
+.footer.segment {
+    padding: 3em 0;
+    margin-top: 4em !important;
+}
+
+th {
+    font-weight: normal !important;
+}
+
+/*home*/
+.lists .item .image {
+    width: 18em !important;
+}
+
+.home .projects .content {
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.home .image-logo {
+    height: 100px;
+    overflow: hidden
+}
+
+/*login*/
+.login {
+    background-color: #00b5ad;
+}
+
+.login > .grid {
+    height: 100%;
+}
+
+.login .column {
+    max-width: 550px;
+}
+
+.login .bg-one {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.login .bg-two {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.login .ui.vertical.divider:after, .ui.vertical.divider:before {
+    border-left: 1px solid #E5E5E5;
+}
+
+.login .divider {
+    width: 30%;
+    margin: auto !important;
+    padding-bottom: 0;
+}
+
+.login .divider-or {
+    left: 12% !important;
+    color: #E5E5E5 !important;
+    font-size: .8em !important;
+}
+
+.login .error-message {
+    text-align: left;
+}
+
+.login .main-content {
+    padding: 3em 2em !important;
+}
+
+.login .register-segment {
+    color: #00b5ad;
+    padding-bottom: 0 !important;
+}
+
+.login .forget-segment {
+    font-size: .8em;
+    padding: 0 !important;
+}
+
+.login .github-icon {
+    font-size: 2em;
+    color: #00b5ad;
+}
+
+/*progress*/
+.progress .ui.progress:last-child {
+    margin: 0 0 0;
+}
+
+#fixed-div {
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+}
+
+#go-top-button {
+    display: none;
+}
