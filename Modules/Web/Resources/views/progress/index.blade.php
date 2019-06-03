@@ -30,7 +30,7 @@
                                         @forelse ($modules as $module)
                                             <tr>
                                                 <td width="12%">
-                                                    <a href="{{route('task.index',['uuid'=>\request()->route('uuid'),'search[module_id]'=>$module->id])}}">
+                                                    <a href="{{route('task.index',['uuid'=>\request()->route('uuid'),'module_id'=>$module->id])}}">
                                                         {{$module->name}}
                                                     </a>
                                                 </td>
@@ -62,8 +62,8 @@
                                         <tbody>
                                         @forelse ($users as $user)
                                             <tr>
-                                                <td width="12%">
-                                                    <a href="{{route('task.index',['uuid'=>\request()->route('uuid'),'search[assign_id]'=>$user->id])}}">
+                                                <td width="20%">
+                                                    <a href="{{route('task.index',['uuid'=>\request()->route('uuid'),'assign_id'=>$user->id])}}">
                                                         <img class="ui mini avatar image" src="{{$user->avatar}}">
                                                         {{$user->name}}
                                                     </a>
