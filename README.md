@@ -5,7 +5,7 @@ todo.link是基于项目为基础的任务管理系统，使用laravel进行开�
 ## 线上地址
 
 [www.todo.link](http://www.todo.link)
-[![](http://www.todo.link/static/images/dash.png)]
+![avatar](http://www.todo.link/static/images/dash.png)
 
 ## 运行环境要求
 
