@@ -31,7 +31,7 @@
                                             </a>
                                         </div>
                                         <div class="column">
-                                            <a href="{{route('task.index',['uuid'=>\request()->route('uuid'),'search[status]'=>'postponed'])}}"
+                                            <a href="{{route('task.index',['uuid'=>\request()->route('uuid'),'status'=>'postponed'])}}"
                                                class="ui fluid card">
                                                 <div class="content">
                                                     <div class="center aligned header">
@@ -44,7 +44,7 @@
                                             </a>
                                         </div>
                                         <div class="column">
-                                            <a href="{{route('task.index',['uuid'=>\request()->route('uuid'),'search[assign_id]'=>$userId])}}"
+                                            <a href="{{route('task.index',['uuid'=>\request()->route('uuid'),'assign_id'=>$userId])}}"
                                                class="ui fluid card">
                                                 <div class="content">
                                                     <div class="center aligned header">
