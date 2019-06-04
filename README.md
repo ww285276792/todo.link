@@ -35,7 +35,7 @@ cp .env.example .env
 #### 生成数据表
 
 ```shell
-$ php artisan migrate --seed
+$ php artisan migrate
 ```
 
 #### 初始化系统数据
