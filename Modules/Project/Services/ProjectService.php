@@ -40,11 +40,7 @@ class ProjectService
             'uuid' => request()->route('uuid')
         ], ['name'])->first();
 
-        if (count($project) > 0) {
-            return $project->name;
-        }
-
-        return null;
+        return $project ? $project->name : null;
     }
 
     /**
