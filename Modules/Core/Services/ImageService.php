@@ -3,6 +3,7 @@
 namespace Modules\Core\Services;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Intervention\Image\ImageManagerStatic as Image;
 
 /**
@@ -36,6 +37,10 @@ class ImageService
     public function upload($name, Request $request)
     {
         if ($request->hasFile($name)) {
+            if (!is_dir('storage/uploads')) {
+                Storage::makeDirectory('public/uploads', 0777, true, true);
+            }
+
             $file = $request->file($name);
             $destinationPath = 'storage/uploads/';
             $extension = $file->getClientOriginalExtension();
