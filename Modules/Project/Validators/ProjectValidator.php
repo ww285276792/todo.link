@@ -29,18 +29,17 @@ class ProjectValidator extends LaravelValidator
          */
         self::setRules([
             ValidatorInterface::RULE_CREATE => [
-                'name' => 'required|unique:projects,name',
+                'name' => 'required',
                 'image' => 'mimes:jpeg,png,jpg|max:1024',
             ],
             ValidatorInterface::RULE_UPDATE => [
-                'name' => 'required|unique:projects,name,' . $request->route('project'),
+                'name' => 'required',
                 'image' => 'nullable|mimes:jpeg,png,jpg|max:1024',
             ],
         ]);
 
         self::setMessages([
             'name.required' => trans('project.validator.name_required'),
-            'name.unique' => trans('project.validator.name_unique'),
             'image.mimes' => trans('project.validator.image_mimes'),
             'image.max' => trans('project.validator.image_max'),
         ]);

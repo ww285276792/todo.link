@@ -54,7 +54,8 @@
                                         </div>
                                         <div class="field">
                                             <label>{{trans('task.table.description')}}</label>
-                                            <textarea name="description">{{old('description')}}</textarea>
+                                            <textarea name="description"
+                                                      id="description">{{old('description')}}</textarea>
                                         </div>
                                         <div class="field">
                                             <label>{{trans('task.table.level')}}</label>
@@ -139,4 +140,14 @@
             </div>
         </div>
     </div>
+@endsection
+
+@include('web::common.editor')
+
+@section('scripts')
+    <script>
+        CKEDITOR.replace('description', {
+            filebrowserImageUploadUrl: '{{route('project.upload_image',['uuid'=>\request()->route('uuid')])}}'
+        });
+    </script>
 @endsection

@@ -43,6 +43,10 @@ Route::group(['middleware' => 'web', 'namespace' => 'Modules\Web\Http\Controller
         Route::get('log', 'Project\LogController@index')->name('project_log.index');
 //        progress
         Route::get('progress', 'Project\ProgressController@index')->name('project_progress.index');
+//        editor_uplaod_image
+        Route::post('upload_image', 'Project\ImageController@uploadImage')->name('project.upload_image');
+//        editor_load_image
+        Route::get('image/{id}', 'Project\ImageController@showImage')->name('project.show_image');
     });
     Route::group(['prefix' => 'user'], function () {
 //        reset_pwd

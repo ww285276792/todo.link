@@ -29,6 +29,9 @@ return [
         'title_required' => '标题不能为空',
         'module_id_required' => '模块不能为空',
         'due_date_date_format' => '截止时间格式错误',
+        'upload_required' => '没有选择文件',
+        'upload_mimes' => '图片格式错误',
+        'upload_max' => '图片不能大于1M',
     ],
     'status' => [
         'open' => '未完成',
