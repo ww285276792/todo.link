@@ -20,7 +20,7 @@ todo.link是基于项目为基础的任务管理系统，使用laravel进行开�
 
 克隆源代码到本地：
 
-    > git clone git@github.com:ww285276792/todo.link.git
+    git clone git@github.com:ww285276792/todo.link.git
 
 #### 安装扩展包依赖
 
@@ -42,6 +42,13 @@ $ php artisan migrate
 
 ```shell
 $ php artisan module:seed Core
+```
+
+
+#### 文件上传配置
+
+```shell
+$ php artisan storage:link
 ```
 
 ## License
